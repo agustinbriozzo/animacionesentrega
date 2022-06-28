@@ -74,8 +74,18 @@ main {
     text-decoration: none;
     color: white;
     font-size: 17px;
+    /* subrayado */
+    background-image: linear-gradient(currentColor, currentColor);
+   	background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .7s;
 }
-
+.navegacion-principal li a:hover{
+    color: white;
+	/*subrayado*/
+	background-size: 100% 3px;
+}
 /*TERMINA HEADER */
 
 /*EMPIEZA PRESENTACION*/
