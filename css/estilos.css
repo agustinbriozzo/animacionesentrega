@@ -1,0 +1,346 @@
+/*EMPIEZAN ESTILOS GENERALES PAGINA */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
+*{
+    font-family: Raleway , sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+h1,h2,h3{
+    font-family: Raleway , cursive;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+p{
+    font-family: Raleway, sans-serif;
+    font-size: 1.5rem ;
+}
+
+.contenedor-padre {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:"header header header"
+                        "img img img"
+                        "desc desc desc"
+                        "mapa mapa mapa"
+                        "footer footer footer";
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 90px 750px 200px 550px 150px;
+}
+
+/*TEMINA ESTILOS GENERALES PAGINA */
+
+
+/*EMPIEZA HEADER */
+
+header {
+    width: 100%;
+    background-color: black;
+    grid-area: header;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main {
+    width: 100%;
+    grid-area: main;
+}
+
+.navegacion-principal {
+    display: flex;
+}
+
+.navegacion-principal li {
+    margin-right: 20px;
+}
+
+.navegacion-principal li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+/*TERMINA HEADER */
+
+/*EMPIEZA PRESENTACION*/
+.imagen-presentacion {
+    width: 100%;
+    grid-area: img;
+}
+
+.imagen-presentacion img {
+    width: 100%;
+}
+
+/*TERMINA PRESENTACION */
+
+/*EMPIEZA DESCRIPCION */
+
+.descripcion {
+    width: 100%;
+    margin: 40px auto;
+    text-align: center;
+    grid-area: desc;
+}
+
+/*TERMINA DESCRIPCION */
+
+/*EMPIEZA UBICACION*/
+.ubicacion {
+    margin: 20px 0;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    grid-area: mapa;
+}
+/*TERMINA UBICACION*/
+
+/*EMPIEZA FOOTER*/
+footer {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: footer;
+}
+
+footer a {
+    margin-right: 20px;
+}
+
+/* From uiverse.io by @fanishah */
+.button {
+    font-family: inherit;
+    background: #2CA0D9;
+    color: white;
+    padding: 0.35em 0;
+    font-size: 17px;
+    border: none;
+    border-radius: 0.7em;
+    letter-spacing: 0.08em;
+    position: relative;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 2.1em;
+    padding-left: 2.8em;
+    padding-right: 0.9em;
+}
+
+.button .icon {
+    background: #fff;
+    height: 2em;
+    width: 2em;
+    border-radius: 2em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0.4em;
+    transition: all 0.5s;
+}
+
+.icon svg {
+    margin-left: 0.4em;
+    transition: all 0.5s;
+    color: #2CA0D9;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.button:hover .icon svg {
+    transform: rotate(360deg);
+}
+
+.button:hover .icon {
+    width: calc(100% - 0.85rem);
+    border-radius: 0.5em;
+}
+
+/*TERMINA FOOTER*/
+
+/*EMPIEZA ESTILOS GENERALES PAGINAS*/
+
+.contenedor-pagina {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "header header header"
+                        "main main main"
+                        "footer footer footer";
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 90px 850px 125px;
+}
+
+/*TERMINA ESTILOS GENERALES PAGINAS*/
+
+
+/*EMPIEZA SOBRE NOSOTROS*/
+
+
+.contenedor-nosotros {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 0;
+}
+
+.imagen-nosotros {
+    width: 1500px;
+    height: 600px;
+
+}
+
+.imagen-nosotros img {
+    width: 100%;
+}
+.contenedor-nosotros .imagen-nosotros{
+    flex-direction: row;
+}
+.contenedor-nosotros .sobre-nosotros{
+    flex-direction: row;
+}
+.contenedor-nosotros .sobre-nosotros p{
+    font-size: 1.8rem;
+    padding-left: 30px;
+}
+.contenedor-nosotros .sobre-nosotros h2{
+    font-size: 1.8rem;
+    padding-left: 30px;
+}
+
+
+/*TERMINA SOBRE NOSOTROS*/
+
+/*EMPIEZA GALERIA*/
+
+
+.galeria {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.imagenes-galeria img {
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+/*TERMINA GALERIA*/
+/* EMPIEZA CONTACTO */
+.formulario{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 40%;
+    height: 80%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: #211f1d 0px 0px 50px;
+    border-radius: 10px;
+    
+}
+input, textarea{
+    border: none;
+    resize: none;
+    outline: none;
+    padding: 15px;
+    width: 80%;
+    margin: 20px;
+    border-bottom: 1px solid;
+}
+.formulario__fondo--grande{
+    background-image: url(../media/AIKEN-226.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* TERMINA CONTACTO */
+
+/*EMPIEZA MEDIA QUERYES*/
+@media screen and (max-width: 1440px) {
+    .contenedor-padre {
+        grid-template-rows: 90px 520px 150px 550px 150px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .contenedor-padre {
+        grid-template-rows: 90px 400px 200px 550px 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navegacion-principal li a {
+        font-size: 10px;
+    }
+    .contenedor-padre{
+        grid-template-rows: 90px 300px 200px 550px 150px;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .home {
+        display: block;
+    }
+    .home img{
+        width: 90%;
+    }
+    nav {
+        justify-content: center;
+    }
+    .navegacion-principal {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .navegacion-principal li a {
+        font-size: 13px;
+    }
+    .contenedor-padre{
+        grid-template-rows: 125px 160px 300px 550px 150px;
+    }
+    /* .imagen-nosotros img{
+        display: none;
+    } */
+}
+@media screen and (max-width: 375px) {
+    .navegacion-principal li a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .navegacion-principal li a {
+        font-size: 10px;
+    }
+}
+
+/*TERMINA MEDIA QUERYES*/
